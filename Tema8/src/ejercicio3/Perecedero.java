@@ -27,7 +27,15 @@ public class Perecedero extends Productos{
 		double precioF;
 		
 		if(diasCaducar == 1) {
-			precioF = super.calcular(cantidad)/4;
+			precioF = super.precio(cantidad)/4;
+		} else if(diasCaducar == 2) {
+			precioF = super.precio(cantidad)/3;
+		} else if(diasCaducar == 3) {
+			precioF = super.precio(cantidad)/2;
+		} else {
+			precioF = super.precio(cantidad);
 		}
+		
+		return precioF;
 	}
 }
