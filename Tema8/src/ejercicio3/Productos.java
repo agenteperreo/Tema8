@@ -31,7 +31,7 @@ public class Productos {
 		return "Productos [nombre=" + nombre + ", precio=" + precio + "]";
 	}
 	
-	public double precio(int cantidad) {
+	public double calcular(int cantidad) {
 		
 		return precio * cantidad;
 	}
