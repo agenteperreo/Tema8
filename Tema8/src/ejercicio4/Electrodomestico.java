@@ -66,5 +66,38 @@ public class Electrodomestico {
 		return letra;
 	}
 	
+	public String comprobarColor(String color) {
+		
+		switch(color) {
+		
+		case "Blanco", "Negro", "Rojo", "Azul", "gris" -> {
+			
+		}
+		
+		default -> {
+			color="Blanco";
+		}
+		}
+		
+		return color;
+	}
+	
+	public void precioFinal() {
+		
+		switch(consumoElectrico) {
+		
+		case 'A' -> {
+			this.precioBase+=100;
+		}
+		
+		case 'B' -> {
+			this.precioBase+=80;
+		}
+		
+		case 'C' -> {
+			
+		}
+		}
+	}
 	
 }
