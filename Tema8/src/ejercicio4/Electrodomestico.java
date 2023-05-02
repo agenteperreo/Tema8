@@ -76,24 +76,25 @@ public class Electrodomestico {
 		return color;
 	}
 
-	public void precioFinal() {
+	public double precioFinal() {
 
+		double precioFinal=precioBase;
 		switch (consumoElectrico) {
 
 		case 'A' -> {
-			this.precioBase += 100;
+			precioFinal += 100;
 		}
 
 		case 'B' -> {
-			this.precioBase += 80;
+			precioFinal += 80;
 		}
 
 		case 'C' -> {
-			this.precioBase += 60;
+			precioFinal += 60;
 		}
 
 		case 'D' -> {
-			this.precioBase += 50;
+			precioFinal += 50;
 		}
 
 		case 'E' -> {
@@ -101,7 +102,7 @@ public class Electrodomestico {
 		}
 
 		case 'F' -> {
-			this.precioBase += 10;
+			precioFinal += 10;
 		}
 
 		default -> {
@@ -111,21 +112,31 @@ public class Electrodomestico {
 
 		if (peso > -1 && peso < 20) {
 			
-			this.precioBase += 10;
+			precioFinal += 10;
 			
 		} else if (peso > 19 && peso < 50) {
 			
-			this.precioBase += 50;
+			precioFinal += 50;
 			
 		} else if (peso > 49 && peso < 80) {
 			
-			this.precioBase += 80;
+			precioFinal += 80;
 			
 		} else if (peso > 79) {
 			
-			this.precioBase += 100;
+			precioFinal += 100;
 			
 		}
+		
+		return precioFinal;
 	}
+
+	@Override
+	public String toString() {
+		return "Electrodomestico [Precio Base=" + precioBase + ", Color=" + color + ", Consumo Electrico="
+				+ consumoElectrico + ", Peso=" + peso + "]";
+	}
+	
+	
 
 }
