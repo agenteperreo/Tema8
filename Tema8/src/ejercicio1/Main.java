@@ -1,26 +1,32 @@
 package ejercicio1;
 
-import java.util.Scanner;
-
 public class Main {
 
 	public static void main(String[] args) {
 
-		HoraExacta he = new HoraExacta(23, 59, 59);
-		
-		he.inc();
-		
-		System.out.println(he.toString());
-	}
+		// Creamos el objeto
+		HoraExacta he = new HoraExacta(28, 59, 59);
 
-	static public void menu() {
-		System.out.println("-------MENU-------");
-		System.out.println("-  1.Añadir min  -");
-		System.out.println("-  2.Cambiar min -");
-		System.out.println("- 3.Cambiar hora -");
-		System.out.println("-    4.Mostrar   -");
-		System.out.println("-  5.Hora exacta -");
-		System.out.println("------------------");
+		// Incrementamos la hora 1 segundo
+		he.inc();
+
+		// Mostramos la hora nueva
+		System.out.println(he);
+
+		// Creamos el objeto h
+		Hora h = new Hora(12, 59);
+
+		// Cambiamos la hora
+		h.setHora(23);
+
+		// Cambiamos los minutos
+		h.setMinutos(60);
+
+		// Añadimos un minuto
+		h.inc();
+
+		// Mostramos la hora
+		System.out.println(h);
 	}
 
 }
