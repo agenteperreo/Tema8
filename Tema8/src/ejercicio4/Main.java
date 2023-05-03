@@ -13,14 +13,14 @@ public class Main {
 
         //Creamos los objetos de las clases Electrodomestico, Lavadora y Television
         Electrodomestico e1 = new Electrodomestico();
-        Electrodomestico e2 = new Electrodomestico(200, "rojo", 'E', 30);
-        Electrodomestico e3 = new Electrodomestico(300, 40);
+        Electrodomestico e2 = new Electrodomestico(300, "Rojo", 'F', 122);
+        Electrodomestico e3 = new Electrodomestico(198, 46);
         Electrodomestico l1 = new Lavadora();
-        Electrodomestico l2 = new Lavadora(300, "azul", 'E', 40, 40);
-        Electrodomestico l3 = new Lavadora(560, 100);
+        Electrodomestico l2 = new Lavadora(600, "Blanco", 'B', 56, 22);
+        Electrodomestico l3 = new Lavadora(560, 67);
         Electrodomestico t1 = new Television();
-        Electrodomestico t2 = new Television(400, "negro", 'C', 50, 40, true);
-        Electrodomestico t3 = new Television(300, 60);
+        Electrodomestico t2 = new Television(1000, "negro", 'A', 70, 82, true);
+        Electrodomestico t3 = new Television(549.99, 68);
 
        //Introducimos los objetos que acabamos de crear en el array
         arrayElec[0] = e1;
