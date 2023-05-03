@@ -64,7 +64,7 @@ public class Electrodomestico {
 
 		switch (color) {
 
-		case "Blanco", "Negro", "Rojo", "Azul", "gris" -> {
+		case "Blanco", "Negro", "Rojo", "Azul", "Gris" -> {
 
 		}
 
