@@ -202,8 +202,8 @@ public class Electrodomestico {
 	 */
 	@Override
 	public String toString() {
-		return "Electrodomestico [Precio Base=" + precioBase + ", Color=" + color + ", Consumo Electrico="
-				+ consumoElectrico + ", Peso=" + peso + "]";
+		return "Precio Base=" + precioBase + "\nColor=" + color + "\nConsumo Electrico="
+				+ consumoElectrico + "\nPeso=" + peso ;
 	}
 
 }

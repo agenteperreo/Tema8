@@ -11,7 +11,7 @@ public class Main {
 		he.inc();
 
 		// Mostramos la hora nueva
-		System.out.println(he);
+		System.out.println("Son las: "+he);
 
 		// Creamos el objeto h
 		Hora h = new Hora(12, 59);
@@ -26,7 +26,7 @@ public class Main {
 		h.inc();
 
 		// Mostramos la hora
-		System.out.println(h);
+		System.out.println("Son las: "+h);
 	}
 
 }

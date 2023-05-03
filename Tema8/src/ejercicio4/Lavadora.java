@@ -80,7 +80,7 @@ public class Lavadora extends Electrodomestico {
 	 */
 	@Override
 	public String toString() {
-		return "Lavadora [carga=" + carga + super.toString() + "]";
+		return "LAVADORA\nCarga=" + carga + "\n" + super.toString();
 	}
 
 }
